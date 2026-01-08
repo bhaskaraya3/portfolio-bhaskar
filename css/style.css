@@ -400,3 +400,50 @@ footer .btn {
     min-width: 220px;
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/* =====================
+   MOBILE IMPROVEMENTS
+===================== */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  nav h1 {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 260px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+=======
+>>>>>>> 142ed84 (added project)
+>>>>>>> 452b6f3 (resume uploaded)
