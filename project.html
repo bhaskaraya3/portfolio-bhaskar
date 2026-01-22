@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Projects | Bhaskar</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Bhaskar Arya</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <header>
+    <nav>
+      <div class="logo">Bhaskar Arya</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="project.html" class="nav-link active">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link btn">Get in Touch</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-<nav>
-  <h1>Analyze. Visualize. Decide</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="project.html">Projects</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<section>
-  <h2 class="section-title">Projects</h2>
-
-  <div class="card-container">
-
-    <div class="card">
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
       <div class="project-card">
-
         <div class="project-image">
-          <img src="assets/images/coffee.jpg" alt="Coffee Sales Dashboard">
+          <img src="assets/images/coffee.png" alt="Coffee Sales Analysis"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%232d5016%22 width=%22400%22 height=%22250%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2240%22 fill=%22%23fff%22%3ECoffee%3C/text%3E%3C/svg%3E'">
         </div>
-
-        <div class="project-content">
+        <div class="project-info">
           <h3>Coffee Sales Analysis</h3>
-          <p>SQL, Power BI, DAX</p>
-          <p>Analyzed coffee sales & revenue split with business insights.</p>
-          <a class="btn" href="https://github.com/bhaskaraya3/powerBI_portfolio/tree/main/coffee_sales_analysis">View Project</a>
-        </div>
+          <p>Comprehensive analysis of coffee sales data with interactive Power BI dashboards and advanced DAX
+            calculations.</p>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
 
+          </div>
+          <a href="https://github.com/bhaskaraya3/PowerBI-Business-Dashboards/tree/main/coffee_sales_analysis"
+            target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
         <div class="project-image">
-          <img src="assets/images/superstore.webp" alt="Superstore Sales Dashboard">
+          <img src="assets/images/superstore.png" alt="Superstore Analysis"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23ff8c42%22 width=%22400%22 height=%22250%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2240%22 fill=%22%23fff%22%3ESuperstore%3C/text%3E%3C/svg%3E'">
         </div>
+        <div class="project-info">
+          <h3>Superstore Analysis</h3>
+          <p>Business intelligence dashboards revealing key insights for retail operations and profit optimization.</p>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+          </div>
+          <a href="https://github.com/bhaskaraya3/PowerBI-Business-Dashboards/tree/main/superstore_sales_analysis"
+            target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
 
-        <div class="project-content">
-          <h3>Superstore Sales Analysis</h3>
-          <p>Analyzed superstore sales with business insights.</p>
-          <a class="btn" href="https://github.com/bhaskaraya3/powerBI_portfolio/tree/main/superstore_sales_analysis">View Project</a>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/images/weather.png" alt="Live Weather Dashboard"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22250%22%3E%3Crect fill=%22%23ffd452%22 width=%22400%22 height=%22250%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2240%22 fill=%22%232d5016%22%3EWeather%3C/text%3E%3C/svg%3E'">
         </div>
- 
-      <div class="project-image">
-          <img src="assets/images/weather_report.jpg" alt="Superstore Sales Dashboard">
-        </div>
-
-        <div class="project-content">
+        <div class="project-info">
           <h3>Live Weather Analysis</h3>
-          <p></p>
-          <a class="btn" href="https://github.com/bhaskaraya3/PowerBI-Business-Dashboards/tree/main/live_weather_analysis">View Project</a>
+          <p>Real-time weather data visualization using API integration with Power BI for dynamic insights.</p>
+          <div class="project-tags">
+            <span class="tag">API</span>
+            <span class="tag">Power BI</span>
+          </div>
+          <a href="https://github.com/bhaskaraya3/PowerBI-Business-Dashboards/tree/main/live_weather_analysis"
+            target="_blank" class="btn">View Project</a>
         </div>
-
-
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <footer>
+    <p>© 2026 Bhaskar Arya | Data Analyst | Analyze. Visualize. Decide.</p>
+  </footer>
 
-<footer>
-  © 2026 Bhaskar | Data Analyst
-
-  <div class="footer-cta">
-    <a class="btn" href="contact.html">Contact Me</a>
-    <a class="btn" href="resume.html">View Resume</a>
-  </div>
-</footer>
-
+  <script src="js/script.js"></script>
 </body>
+
 </html>
