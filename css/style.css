@@ -450,21 +450,22 @@ section {
 
 .contact-info {
   background-color: var(--primary-green);
-  padding: 3rem;
+  padding: 2.6rem;
   border-radius: 20px;
   color: var(--white);
 }
 
 .contact-info h3 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
   color: var(--accent-yellow);
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
+  margin-top: 2rem;
 }
 
 .social-link {
