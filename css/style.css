@@ -488,7 +488,6 @@ section {
 .social-link img {
   width: 40px;
   height: 40px;
-  filter: brightness(0) invert(1);
 }
 
 .contact-form {
@@ -632,5 +631,96 @@ footer p {
     width: 90px;
     height: 90px;
     font-size: 0.75rem;
+  }
+}
+/* Project Filter Buttons */
+.project-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: var(--white);
+  color: var(--primary-green);
+  padding: 0.8rem 1.8rem;
+  border: 2px solid var(--primary-green);
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.filter-btn:hover {
+  background-color: var(--accent-orange);
+  color: var(--white);
+  border-color: var(--accent-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-color: var(--primary-green);
+  box-shadow: 0 4px 15px rgba(45, 80, 22, 0.3);
+}
+
+/* Project Card Filter Animation */
+.project-card {
+  transition: all 0.5s ease, transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card.hide {
+  display: none;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.project-card.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Filter Buttons */
+@media (max-width: 768px) {
+  .project-filters {
+    gap: 0.7rem;
+  }
+
+  .filter-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-btn {
+    width: 100%;
+    text-align: center;
   }
 }
